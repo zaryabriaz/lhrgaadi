@@ -1,0 +1,229 @@
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.contactbtnbg
+{
+  display: block;
+  position: relative;
+  /*z-index: 1;
+  */
+  border-radius: 25px;
+
+  width: 224px;
+  overflow: hidden;
+}
+.contactformbtn1
+{
+  position: absolute;
+
+  width: 300%;
+  height: 100%;
+  
+}
+
+
+.contactformbtn2
+{
+
+  background: #39b54a;
+  min-width: 224px;
+  height: 50px;
+
+  font-family: Poppins-Medium;
+  font-size: 25px;
+  color: #fff;
+  line-height: 1.2;
+}
+.contactformback2
+{
+    margin:0;
+    padding:0;
+
+    background-size: auto;
+    font-family: sans-serif;
+    background-color: white;
+    position: absolute;
+   padding: 102px 15px 63px 65px;
+      font-size: 30px;
+   left: 63%;
+ min-width: 140px;
+     width: 530px;
+     height: 900px;
+ }
+
+
+
+.mapouter{text-align:right;height:900px;width:1598px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:900px;width:1598px; z-index: -4;}
+.contactnumber{
+  font-family: Poppins-Medium;
+  font-size: 23px;
+  color: #fff;
+
+  position: fixed;
+  z-index: +2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content:right ;
+  align-items: right;
+  min-width: 220px;
+  height: 43px;
+  border-radius: 25px;
+  background-color: #39b54a;
+  padding: 0 20px;
+
+    top: 90%;
+    left: calc((108% - 940px) / 2);
+    -webkit-transform: translate(-70%, -50%);
+    -moz-transform: translate(-70%, -50%);
+    -ms-transform: translate(-70%, -50%);
+    -o-transform: translate(-70%, -50%);
+    transform: translate(-40%, -20%);
+}
+.contactemail {
+  font-family: Poppins-Medium;
+  font-size: 23px;
+  color: #fff;
+
+  position: fixed;
+  z-index: +1;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content:right ;
+  align-items: right;
+  min-width: 220px;
+  height: 45px;
+  border-radius: 25px;
+  border-top-style: 20px;  
+  background-color: #39b54a;
+  padding: 0 20px;
+
+    top: 90%;
+    left: calc((150% - 940px) / 2);
+    -webkit-transform: translate(-70%, -50%);
+    -moz-transform: translate(-70%, -50%);
+    -ms-transform: translate(-70%, -50%);
+    -o-transform: translate(-70%, -50%);
+    transform: translate(-40%, -20%);
+}
+
+.ContactInputLabel
+{
+    display: inline-block;
+  width: 100%;
+  background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 22px;
+
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 2px;
+
+}
+
+
+textarea.contactinputlabel1 {
+
+  min-height: 140px;
+  padding-bottom: 13px;
+  display: block;
+  width: 100%;
+background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 22px;
+
+  color: #555555;
+  line-height: 1.2;
+
+}
+
+.ContactLabel
+{
+   font-family: Poppins-Bold;
+  font-size: 20px;
+
+  color: #999999;
+  line-height: 1.2;
+  padding-left: 2px;
+}
+.contacttitle
+{
+    display: block;
+  width: 100%;
+  font-family: Poppins-Bold;
+  font-size: 49px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 64px;   
+}
+.contactinput{
+  border-bottom: 2px solid #dbdbdb;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  justify-content: space-between;
+  padding-bottom: 1px;
+font-family: Poppins-Regular;
+padding-left: -52px;   
+}
+.contactinput1{
+  border-bottom: 2px solid #dbdbdb;
+  margin-bottom: 45px;
+  display:block;
+
+  justify-content: space-between;
+  padding-bottom: 2px;
+font-family: Poppins-Regular;
+padding-left: -52px;   
+}
+textarea{
+  min-width: 380px;
+height: 200px; 
+  outline: none;
+border:none;
+
+}
+textarea.contactinput1{
+  min-height: 140px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+input {
+  outline: none;
+  border: none;
+}
+
