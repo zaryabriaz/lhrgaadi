@@ -1,0 +1,118 @@
+<!--Zaryab Index page Css code starts from here-->
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    font-size:20px;
+
+    color:white;
+}
+
+.row{
+    max-width:1180px;
+    margin:0 auto;
+}
+
+.main-nav {
+    float:right;
+    margin-top:60px;
+}
+.main-nav li{
+    display:inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:90%;
+    font-weight:100;
+}
+
+h1{
+    color:#fff;
+    font-size:200%;
+    word-spacing:1px;
+    letter-spacing:3px;
+
+}
+
+*{
+    color:#ffff;
+}
+.borderr{
+    border:1px solid red;
+}
+.user{
+    color: navajowhite;
+}
+#head{
+    background-color: #eaedf2;
+}
+img{
+    height: 80px;
+}
+.change2{
+    color:teal;
+}
+.borderrr{
+    border:1px solid green;
+}
+.change{
+    color :red;
+    font-weight: bold;
+}
+
+#footer{
+/*background-color: black;*/
+    height: 200px;
+}
+#footer-design-border{
+
+}
+#search_tag{
+  padding-top: 120px;
+    padding-bottom:100px;
+    padding-left: 90px;
+}
+.font
+{
+    font-family: cursive;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../media/background.jpg");
+    background-size: cover;
+    /*background-color: red;*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#bttn {
+    padding-top: 25px;
+}
+#find{
+padding-top:30px;
+}
+#Name{
+    padding-top: 30px;
+}
+
+body{
+
+
+}
+#image{
+    max-width: 100%;
+
+}
+
+@media only screen and (max-width:1000px) {
+    body {
+        /*background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../media/md background.jpg");*/
+    background-color:black;
+    }
+}
+<!-- index page css code end here-->
+     <!--Now you have add your css file code here with this format-->
