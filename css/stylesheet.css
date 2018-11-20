@@ -4,6 +4,56 @@
     padding:0px;
     box-sizing:border-box;
 }
+.animation
+{
+    animation: colorchange 1s infinite;
+
+}
+@keyframes colorchange
+{
+    0%{color: white;}
+    25%{color: skyblue;}
+    50%{color: purple;}
+    100%{color: skyblue;}
+}
+.Button
+{
+    color: skyblue;
+    cursor:pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+.Button1:hover
+{
+    background-color: white;
+}
+.Button1
+{
+    background-color: transparent;
+    border:1px solid;
+}
+.Button2
+{
+    background-color: transparent;
+    border:1px solid;
+}
+.Button3
+{
+    background-color: transparent;
+    border:1px solid;
+}
+
+.Button2:hover
+{
+    background-color: white;
+}
+.Button3:hover
+{
+    background-color: white;
+}
 body{
     font-size:20px;
 
@@ -67,14 +117,14 @@ img{
 }
 
 #footer{
-/*background-color: black;*/
+    /*background-color: black;*/
     height: 200px;
 }
 #footer-design-border{
 
 }
 #search_tag{
-  padding-top: 120px;
+    padding-top: 120px;
     padding-bottom:100px;
     padding-left: 90px;
 }
@@ -93,7 +143,7 @@ body{
     padding-top: 25px;
 }
 #find{
-padding-top:30px;
+    padding-top:30px;
 }
 #Name{
     padding-top: 30px;
@@ -111,8 +161,8 @@ body{
 @media only screen and (max-width:1000px) {
     body {
         /*background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../media/md background.jpg");*/
-    background-color:black;
+        background-color:black;
     }
 }
 <!-- index page css code end here-->
-     <!--Now you have add your css file code here with this format-->
+<!--Now you have add your css file code here with this format-->
