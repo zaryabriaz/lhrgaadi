@@ -1,8 +1,16 @@
-.alignment
+
+.Container
 {
-    text-align: center;
-    padding: 200px;
     font-family: sans-serif;
+    max-width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 300px){
+    .Container
+    {
+        width: 300px;
+    }
 }
 .Background
 {
