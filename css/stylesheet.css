@@ -1,5 +1,5 @@
 <!--Zaryab Index page Css code starts from here-->
-*{
+#body-index{
     margin:0px;
     padding:0px;
     box-sizing:border-box;
@@ -16,7 +16,7 @@
     50%{color: purple;}
     100%{color: skyblue;}
 }
-.Button
+.Button-index
 {
     color: skyblue;
     cursor:pointer;
@@ -26,35 +26,35 @@
     border-radius: 200px;
     transition: background-color 0.2s,border 0.2s,color 0.2s;
 }
-.Button1:hover
+.Button1-index:hover
 {
     background-color: white;
 }
-.Button1
+.Button1-index
 {
     background-color: transparent;
     border:1px solid;
 }
-.Button2
+.Button2-index
 {
     background-color: transparent;
     border:1px solid;
 }
-.Button3
+.Button3-index
 {
     background-color: transparent;
     border:1px solid;
 }
 
-.Button2:hover
+.Button2-index:hover
 {
     background-color: white;
 }
-.Button3:hover
+.Button3-index:hover
 {
     background-color: white;
 }
-body{
+#body-index{
     font-size:20px;
 
     color:white;
@@ -65,16 +65,16 @@ body{
     margin:0 auto;
 }
 
-.main-nav {
+.main-nav-index {
     float:right;
     margin-top:60px;
 }
-.main-nav li{
+.main-nav-index li{
     display:inline-block;
     list-style: none;
     margin-left: 40px;
 }
-.main-nav li a{
+.main-nav-index li a{
     color:#fff;
     text-decoration:none;
     text-transform:uppercase;
@@ -82,7 +82,7 @@ body{
     font-weight:100;
 }
 
-h1{
+.h1-index{
     color:#fff;
     font-size:200%;
     word-spacing:1px;
@@ -90,76 +90,72 @@ h1{
 
 }
 
-*{
+#body-index{
     color:#ffff;
 }
 .borderr{
     border:1px solid red;
 }
-.user{
+.user-index{
     color: navajowhite;
 }
-#head{
+#head-index{
     background-color: #eaedf2;
 }
 img{
     height: 80px;
 }
-.change2{
+.change2-index{
     color:teal;
 }
 .borderrr{
     border:1px solid green;
 }
-.change{
+.change-index{
     color :red;
     font-weight: bold;
 }
 
-#footer{
+#footer-index{
     /*background-color: black;*/
     height: 200px;
 }
 #footer-design-border{
 
 }
-#search_tag{
+#search_tag-index{
     padding-top: 120px;
     padding-bottom:100px;
     padding-left: 90px;
 }
-.font
+.font-index
 {
     font-family: cursive;
 }
-body{
+#body-index{
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../media/background.jpg");
     background-size: cover;
     /*background-color: red;*/
     background-position: center;
     background-repeat: no-repeat;
 }
-#bttn {
+#bttn-index {
     padding-top: 25px;
 }
-#find{
+#find-index{
     padding-top:30px;
 }
-#Name{
+#Name-index{
     padding-top: 30px;
 }
 
-body{
-
-
-}
 #image{
     max-width: 100%;
 
 }
 
 @media only screen and (max-width:1000px) {
-    body {
+    #body-index {
         /*background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../media/md background.jpg");*/
         background-color:black;
     }
