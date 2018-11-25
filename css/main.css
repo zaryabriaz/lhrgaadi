@@ -1,22 +1,22 @@
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  src: url('../fonts/poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf');
 }
 button {
   outline: none;
@@ -45,7 +45,7 @@ button:hover {
 
   width: 300%;
   height: 100%;
-  
+
 }
 
 
@@ -128,7 +128,7 @@ button:hover {
   min-width: 220px;
   height: 45px;
   border-radius: 25px;
-  border-top-style: 20px;  
+  border-top-style: 20px;
   background-color: #39b54a;
   padding: 0 20px;
 
@@ -189,7 +189,7 @@ background: transparent;
   color: #333333;
   line-height: 1.2;
   text-align: left;
-  padding-bottom: 64px;   
+  padding-bottom: 64px;
 }
 .contactinput{
   border-bottom: 2px solid #dbdbdb;
@@ -198,7 +198,7 @@ background: transparent;
   justify-content: space-between;
   padding-bottom: 1px;
 font-family: Poppins-Regular;
-padding-left: -52px;   
+padding-left: -52px;
 }
 .contactinput1{
   border-bottom: 2px solid #dbdbdb;
@@ -208,11 +208,11 @@ padding-left: -52px;
   justify-content: space-between;
   padding-bottom: 2px;
 font-family: Poppins-Regular;
-padding-left: -52px;   
+padding-left: -52px;
 }
 textarea{
   min-width: 380px;
-height: 200px; 
+height: 200px;
   outline: none;
 border:none;
 
