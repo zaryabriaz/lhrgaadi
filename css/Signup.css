@@ -1,18 +1,7 @@
-body{
-	
-	background-repeat: no-repeat;
- 	border:solid;
-}
 
 .bgimg{
 	background-image: url("../media/t2.JPG");
 	width:100%;
- 	height:100vh;
-}
-
-
-.borderr{
-	
 }
 
 .login{
@@ -61,7 +50,3 @@ input{
 	font-size: 17px;
 }
 
-@media(max-width : 576px)
-{
-
-}
