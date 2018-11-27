@@ -604,9 +604,6 @@ textarea.contactinput1_ContactUs{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-family: sans-serif;
-    max-width: 100%;
-    text-align: center;
 }
 .login_form-control-my {
     height: calc(2.25rem + 2px);
