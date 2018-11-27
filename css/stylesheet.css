@@ -1,3 +1,4 @@
+<!--Zaryab Index page Css code starts from here-->
 #body-index{
     margin:0px;
     padding:0px;
@@ -159,33 +160,43 @@ img{
         background-color:black;
     }
 }
+<!-- index page css code end here-->
+<!--Now you have add your css file code here with this format-->
+/*ali code(contact us page)*/
 
 
 
-/*Areej CSS code starts from here change password*/
-.bg_forgotPassword {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../media/bgImage.jpeg");
-    background-size:cover; width: 100%;
-    height: 100vh;
-    min-height: max-content;
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
-.form-container_forgotPassword{border: 0px solid #fff;
-    padding: 40px 40px; margin-top: 10vh; margin-bottom: 15vh;
-    -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
-    box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
 
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf');
 }
-.text_color_forgotPassword {
-    color: #fff;}
 
-.icon-color_forgotPassword{
-    color: green;
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
 }
-.form-group_forgotPassword {
-    margin-bottom: 1rem;
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf');
 }
-.ul-FP{
+/*button {*/
+  /*outline: none;*/
+  /*border: none;*/
+  /*background: blue;*/
+/*}*/
+
+/*button:hover {*/
+  /*cursor: pointer;*/
+  /*background: #0c5460;*/
+/*}*/
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -193,234 +204,43 @@ img{
     background-color: #333;
 }
 
-li_home_FP {
-    float: left;
-}
-li_right_FP{
-    float: right;
+li {
+    float: top;
 }
 
-li_home_FP a {
-    display: block;
+li a {
+    display: inline;
     color: white;
     text-align: center;
-    padding: 9px 9px;
-    text-decoration: none;
-}
-li_right_FP a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 8px 8px;
-    text-decoration: none;
-}
-li_center_FP a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 8px 8px;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li_home_FP a:hover:not(.active) {
+li a:hover {
     background-color: #111;
-}
-
-li_right_FP:hover:not(.active) {
-    background-color: #111;
-}
-.active {
-    background-color: #111;
-}
-@media screen and (max-width: 375px) {
-    /*li_right{*/
-    /*width: 17%;*/
-    /*height: 20%;*/
-
-    a{
-        font-size: 90%;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    /*li_right{*/
-    /*width: 17%;*/
-    /*height: 20%;*/
-
-    a{
-        font-size: 85%;
-    }
-}
-@media screen and (max-width: 320px)
-{
-    a{
-        font-size: 70%;
-    }
-}
-
-
-
-.navBT {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.navBT a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 8px 8px;
-    text-decoration: none;
-}
-
-.navBT a:hover:not(.active) {
-    background-color: #111;
-}
-
-/*Change password ends here*/
-/*Hammad code starts from here login page*/
-/*Hammad css header and footer code applies from contact us css code*/
-.login_Container
-{
-    font-family: sans-serif;
-    max-width: 100%;
-    text-align: center;
-}
-
-@media screen and (max-width: 300px){
-    .login_Container
-    {
-        width: 300px;
-    }
-}
-.login_Background
-{
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../media/login1.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.login_form-control-my {
-    height: calc(2.25rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-}
-.login_animation
-{
-    animation: colorchange 1s infinite;
-
-}
-@keyframes colorchange
-{
-    0%{color: white;}
-    25%{color: skyblue;}
-    50%{color: white;}
-    100%{color: skyblue;}
-}
-
-
-.login_Button
-{
-    color: skyblue;
-    cursor:pointer;
-    display: inline-block;
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 200px;
-    transition: background-color 0.2s,border 0.2s,color 0.2s;
-}
-.login_Button1
-{
-    background-color: transparent;
-    border:1px solid;
-}
-.login_Button1:hover
-{
-    background-color: white;
-}
-.login_Button2
-{
-    background-color: transparent;
-    border:1px solid;
-}
-.login_Button2:hover
-{
-    background-color: white;
-}
-/*hammad code ends here login page*/
-
-
-/*ali code(contact us page)
-
- */
-
-
-@font-face {
-    font-family: Poppins-Regular;
-    src: url('../fonts/poppins/Poppins-Regular.ttf');
-}
-
-@font-face {
-    font-family: Poppins-Medium;
-    src: url('../fonts/poppins/Poppins-Medium.ttf');
-}
-
-@font-face {
-    font-family: Poppins-Bold;
-    src: url('../fonts/poppins/Poppins-Bold.ttf');
-}
-
-@font-face {
-    font-family: Poppins-SemiBold;
-    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
-}
-.contactformbtn2_ContactUs{
-    outline: none;
-    border: none;
-    background: blue;
-}
-
-.contactformbtn2_ContactUs:hover {
-    cursor: pointer;
-    background: #0c5460;
 }
 
 .contactbtnbg_ContactUs
 {
-    display: block;
-    position: absolute;
-    /*z-index: 1;
-    */
-    border-radius: 25px;
+  display: block;
+  position: absolute;
+  /*z-index: 1;
+  */
+  border-radius: 25px;
 
-    width: 224px;
-    overflow: hidden;
+  width: 224px;
+  overflow: hidden;
 }
 
 .contactformbtn2_ContactUs:hover{
-    cursor: pointer;
-    background-color: #3e8e41
+  cursor: pointer;
+  background-color: #3e8e41
 }
 
 .contactformbtn2_ContactUs:active{
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 
@@ -428,19 +248,19 @@ li_right_FP:hover:not(.active) {
 .contactformbtn2_ContactUs
 {
 
-    background: #39b54a;
+  background: #39b54a;
 
-    min-width: 224px;
-    height: 50px;
+  min-width: 224px;
+  height: 50px;
 
-    font-family: Poppins-Medium;
-    font-size: 25px;
-    color: #fff;
-    line-height: 1.2;
+  font-family: Poppins-Medium;
+  font-size: 25px;
+  color: #fff;
+  line-height: 1.2;
 }
 .contactformback2_ContactUs
 {
-    position: absolute;
+  position: absolute;
 
     width: 100%;
     height: 100%;
@@ -451,37 +271,37 @@ li_right_FP:hover:not(.active) {
     font-family: sans-serif;
     background-color: white;
     position: absolute;
-    /*padding: 102px 15px 63px 65px;*/
-    font-size: 10px;
-    left: 63%;
-    min-width: 140px;
-    width: 540px;
-    height: 900px;
-}
+   /*padding: 102px 15px 63px 65px;*/
+      font-size: 10px;
+   left: 63%;
+ min-width: 140px;
+     width: 540px;
+     height: 900px;
+ }
 
 
 
 .mapouter_ContactUs{text-align:right;height:800px;width:1598px;}
 .gmap_canvas_ContactUs {overflow:hidden;background:none!important;height:800px;width:1598px;}
 .contactnumber_ContactUs{
-    font-family: Poppins-Medium;
-    font-size: 23px;
-    color: #fff;
+  font-family: Poppins-Medium;
+  font-size: 23px;
+  color: #fff;
 
-    position: fixed;
-    z-index: +2;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content:right ;
-    align-items: right;
-    min-width: 220px;
-    height: 43px;
-    border-radius: 25px;
-    background-color: #39b54a;
-    padding: 0 20px;
+  position: fixed;
+  z-index: +2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content:right ;
+  align-items: right;
+  min-width: 220px;
+  height: 43px;
+  border-radius: 25px;
+  background-color: #39b54a;
+  padding: 0 20px;
 
     top: 60%;
     left: calc((140% - 940px) / 2);
@@ -492,26 +312,26 @@ li_right_FP:hover:not(.active) {
     transform: translate(-40%, -20%);
 }
 .contactemail_ContactUs {
-    font-family: Poppins-Medium;
-    font-size: 23px;
-    color: #fff;
+  font-family: Poppins-Medium;
+  font-size: 23px;
+  color: #fff;
 
-    position: fixed;
-    z-index: +1;
+  position: fixed;
+  z-index: +1;
 
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content:right ;
-    align-items: right;
-    min-width: 220px;
-    height: 45px;
-    border-radius: 25px;
-    border-top-style: 20px;
-    background-color: #39b54a;
-    padding: 0 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content:right ;
+  align-items: right;
+  min-width: 220px;
+  height: 45px;
+  border-radius: 25px;
+  border-top-style: 20px;
+  background-color: #39b54a;
+  padding: 0 20px;
 
     top: 50%;
     left: calc((140% - 940px) / 2);
@@ -525,211 +345,240 @@ li_right_FP:hover:not(.active) {
 .ContactInputLabel_ContactUs
 {
     display: inline-block;
-    width: 100%;
-    background: transparent;
-    font-family: Poppins-Regular;
-    font-size: 22px;
+  width: 100%;
+  background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 22px;
 
-    color: #555555;
-    line-height: 1.2;
-    padding: 0 2px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 2px;
 
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 
 }
 
 
 textarea.contactinputlabel1_ContactUs {
-    min-width: 380px;
-    height: 200px;
-    outline: none;
-    border:none;
+  min-width: 380px;
+  height: 200px;
+  outline: none;
+  border:none;
 
-    min-height: 140px;
-    padding-bottom: 13px;
-    display: block;
-    width: 100%;
-    background: transparent;
-    font-family: Poppins-Regular;
-    font-size: 22px;
+  min-height: 140px;
+  padding-bottom: 13px;
+  display: block;
+  width: 100%;
+background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 22px;
 
-    color: #555555;
-    line-height: 1.2;
+  color: #555555;
+  line-height: 1.2;
 
 }
 
 .ContactLabel_ContactUs
 {
-    font-family: Poppins-Bold;
-    font-size: 20px;
+   font-family: Poppins-Bold;
+  font-size: 20px;
 
-    color: #999999;
-    line-height: 1.2;
-    padding-left: 2px;
+  color: #999999;
+  line-height: 1.2;
+  padding-left: 2px;
 }
 .contacttitle_ContactUs
 {
     display: block;
-    width: 100%;
-    font-family: Poppins-Bold;
-    font-size: 49px;
-    color: #333333;
-    line-height: 1.2;
-    text-align: left;
-    padding-bottom: 64px;
+  width: 100%;
+  font-family: Poppins-Bold;
+  font-size: 49px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 64px;
 }
 .contactinput{
-    border-bottom: 2px solid #dbdbdb;
-    margin-bottom: 15px;
-    display: -webkit-box;
-    justify-content: space-between;
-    padding-bottom: 1px;
-    font-family: Poppins-Regular;
-    padding-left: -52px;
+  border-bottom: 2px solid #dbdbdb;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  justify-content: space-between;
+  padding-bottom: 1px;
+font-family: Poppins-Regular;
+padding-left: -52px;
 }
 .contactinput1{
-    border-bottom: 2px solid #dbdbdb;
-    margin-bottom: 45px;
-    display:block;
+  border-bottom: 2px solid #dbdbdb;
+  margin-bottom: 45px;
+  display:block;
 
-    justify-content: space-between;
-    padding-bottom: 2px;
-    font-family: Poppins-Regular;
-    padding-left: -52px;
+  justify-content: space-between;
+  padding-bottom: 2px;
+font-family: Poppins-Regular;
+padding-left: -52px;
 }
 
 textarea.contactinput1_ContactUs{
-    min-height: 140px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+  min-height: 140px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 @media screen and (max-width: 1920px) {
-    .mapouter_ContactUs{
-        width: 100%;
-        height: 60%;
-        left: 3px;
+    ul {
+    width: 13%;
     }
-    .gmap_canvas_ContactUs {
-        width: 100%;
-        left: 3px;
-        height:60%;}
-    .contactformback2_ContactUs{
+  .mapouter_ContactUs{
+    width: 100%;
+    height: 60%;
+    left: 3px;
+  }
+  .gmap_canvas_ContactUs {
+    width: 100%;
+    left: 3px;
+    height:60%;}
+  .contactformback2_ContactUs{
 
-        position: absolute;
-        padding: 90px 15px 63px 65px;
-        font-size: 23px;
-        left: 55%;
-        min-width: 140px;
-        height: 100%;
-        /*width: 530px;*/
-        /*height: 500px;*/
-    }
-    .contactbtnbg_ContactUs
-    {
-        bottom: 1px;
-        left: 10px;
-    }
-    .contactformfront_ContactUs{
-        width: 100%;
-        height:100%;
-    }
-    .contacttitle_ContactUs{
-        width: 100%;
-    }
-    .contactinput_ContactUs
-    {
-        width: 100%;
+    position: absolute;
+    padding: 90px 15px 63px 65px;
+    font-size: 23px;
+    left: 55%;
+    min-width: 140px;
+    height: 100%;
+    /*width: 530px;*/
+    /*height: 500px;*/
+  }
+  .contactbtnbg_ContactUs
+  {
+    bottom: 1px;
+    left: 10px;
+  }
+  .contactformfront_ContactUs{
+    width: 100%;
+    height:100%;
+  }
+  .contacttitle_ContactUs{
+    width: 100%;
+  }
+  .contactinput_ContactUs
+  {
+    width: 100%;
 
-    }
-    .ContactInputLabel_ContactUs
-    {
-        width: 100%;
-    }
+  }
+  .ContactInputLabel_ContactUs
+  {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 1359px) {
-    .mapouter_ContactUs{
-        width: 100%;
-        height: 60%;
-    }
-    .gmap_canvas_ContactUs {
-        width: 100%;
-        height:60%;}
-    .contactformback2_ContactUs{
+@media screen and (max-width: 1366px) {
 
-        position: absolute;
-        padding: 90px 15px 63px 65px;
-        font-size: 23px;
-        left: 55%;
-        min-width: 140px;
-        height: 100%;
-        /*width: 530px;*/
-        /*height: 500px;*/
-    }
-    .contactbtnbg_ContactUs
-    {
-        bottom: 1px;
-        left: 10px;
-    }
-    .contactformfront_ContactUs{
-        width: 100%;
-        height:100%;
-    }
-    .contacttitle_ContactUs{
-        width: 100%;
-    }
-    .contactinput_ContactUs
-    {
-        width: 100%;
+  .mapouter_ContactUs{
+      right: 55%;
+    width: 100%;
+    height: 60%;
+  }
+  .gmap_canvas_ContactUs {
+      right: 55%;
+      width: 100%;
+    height:60%;}
+  .contactformback2_ContactUs{
 
-    }
-    .ContactInputLabel_ContactUs
-    {
-        width: 100%;
-    }
+    position: absolute;
+    padding: 90px 15px 63px 65px;
+    font-size: 23px;
+    left: 55%;
+    min-width: 140px;
+    height: 100%;
+    /*width: 530px;*/
+    /*height: 500px;*/
+  }
+  .contactbtnbg_ContactUs
+  {
+    bottom: 1px;
+    left: 10px;
+  }
+  .contactformfront_ContactUs{
+    width: 100%;
+    height:100%;
+  }
+  .contacttitle_ContactUs{
+    width: 100%;
+  }
+  .contactinput_ContactUs
+  {
+    width: 100%;
+
+  }
+  .ContactInputLabel_ContactUs
+  {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1020px) {
-    .mapouter_ContactUs{
-        width: 100%;
-        height: 60%;
-    }
-    .gmap_canvas_ContactUs {
-        width: 100%;
-        height:60%;}
-    .contactformback2_ContactUs{
+  .mapouter_ContactUs{
+    width: 100%;
+    height: 60%;
+  }
+  .gmap_canvas_ContactUs {
+    width: 100%;
+    height:60%;}
+  .contactformback2_ContactUs{
 
-        position: absolute;
-        padding: 90px 15px 63px 65px;
-        font-size: 23px;
-        left: 55%;
-        min-width: 140px;
-        height: 100%;
-        /*width: 530px;*/
-        /*height: 500px;*/
-    }
-    .contactbtnbg_ContactUs
-    {
-        bottom: 1px;
-        left: 10px;
-    }
-    .contactformfront_ContactUs{
-        width: 100%;
-        height:100%;
-    }
-    .contacttitle_ContactUs{
-        width: 100%;
-    }
-    .contactinput_ContactUs
-    {
-        width: 100%;
+    position: absolute;
+    padding: 90px 15px 63px 65px;
+    font-size: 23px;
+    left: 55%;
+    min-width: 140px;
+    height: 100%;
+    /*width: 530px;*/
+    /*height: 500px;*/
+  }
+  .contactbtnbg_ContactUs
+  {
+    bottom: 1px;
+    left: 10px;
+  }
+  .contactformfront_ContactUs{
+    width: 100%;
+    height:100%;
+  }
+  .contacttitle_ContactUs{
+    width: 100%;
+  }
+  .contactinput_ContactUs
+  {
+    width: 100%;
 
-    }
-    .ContactInputLabel_ContactUs
-    {
-        width: 100%;
-    }
+  }
+  .ContactInputLabel_ContactUs
+  {
+    width: 100%;
+  }
 }
 
 /*Contact us ends here*/
+
+/*Areej CSS code starts from here change password*/
+
+
+.bg_forgotPassword{background: url('http://www.mandolinistibustesi.it/wp-content/uploads/2015/08/sfondo_nero.jpeg')no-repeat;
+    background-size:cover; width: 100%;height: 100vh;
+    background-position: center center;
+}
+.form-container_forgotPassword{border: 0px solid #fff;
+    padding: 50px 40px; margin-top: 15vh; margin-bottom: 15vh;
+    -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+}
+.text_color_forgotPassword {
+    color: #fff;}
+.icon-color_forgotPassword{
+    color: green;
+}
+.form-group_forgotPassword {
+    margin-bottom: 1rem;
+}
+/*Change password ends here*/
