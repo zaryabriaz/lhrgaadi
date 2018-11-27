@@ -582,3 +582,82 @@ textarea.contactinput1_ContactUs{
     margin-bottom: 1rem;
 }
 /*Change password ends here*/
+
+/*Hammad CSS code starts from here login*/
+.login_Container
+{
+    font-family: sans-serif;
+    max-width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 300px){
+    .login_Container
+    {
+        width: 300px;
+    }
+}
+.login_Background
+{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../media/login1.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.login_form-control-my {
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+.login_animation
+{
+    animation: colorchange 1s infinite;
+
+}
+@keyframes colorchange
+{
+    0%{color: white;}
+    25%{color: skyblue;}
+    50%{color: white;}
+    100%{color: skyblue;}
+}
+
+
+.login_Button
+{
+    color: skyblue;
+    cursor:pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+.login_Button1
+{
+    background-color: transparent;
+    border:1px solid;
+}
+.login_Button1:hover
+{
+    background-color: white;
+}
+.login_Button2
+{
+    background-color: transparent;
+    border:1px solid;
+}
+.login_Button2:hover
+{
+    background-color: white;
+}
+/*Login page ends here*/
