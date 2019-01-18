@@ -15,6 +15,18 @@
     <title>Lhr Gaddi</title>
 </head>
 <body id="body-index">
+<div class="section">
+
+
+    <div class="video-container">
+        <div class="color-overlay"></div>
+        <video autoplay loop muted>
+            <source src="video/car.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+<div class="m">
 <div class="container-fluid  change-index font-index">
     <!-- Here top-border starts-->
     <div id="head-index" class="row justify-content-end">
@@ -65,37 +77,69 @@
         </div>
     </div>
     <!-- Done with work of header and navigator-->
-    <div  id ="search_tag-index" class="row change2-index font-index">
+    <!--<div  id ="search_tag-index" class="row change2-index font-index">-->
+        <!--<form class="formData">-->
+        <!--<div  class="col-lg-4 user-index ">-->
+            <!--<div id="carmodel" >-->
+                <!--<label>Car Model:</label>-->
 
-        <div  class="col-lg-4 user-index ">
-            Car Model:
+            <!--<input type="text" name="carmodel">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div  class="col-lg-4 user-index ">-->
+            <!--<div id="location">-->
 
-            <input type="text" name="carmodel">
-        </div>
-        <div  class="col-lg-4 user-index ">
-            Location
+                <!--<label>Location:</label>-->
 
-            <input type="text" name="Areas">
-        </div>
-        <div  class="col-lg-3 user-index">
-            price range
+                <!--<input  type="text" name="Areas">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div  class="col-lg-3 user-index">-->
+            <!--<div id="range">-->
 
-            <select style="color: black">
-                <option value="800000-100000"> 800000-100000</option>
-                <option value="800000-100000"> 100000-200000</option>
-                <option value="800000-100000"> 300000-400000</option>
-                <option value="800000-100000"> 400000-500000</option>
-                <option value="800000-100000"> 500000-600000</option>
-                <option value="800000-100000"> 600000-700000</option>
-            </select>
-        </div>
-        <div id="bttn-index" class=" col-lg-4 ">
-            <input style="color:black"; type="submit" value="search"/>
-        </div>
+                <!--<label> price range:</label>-->
 
+                <!--<select  style="color: black">-->
+                <!--<option value="800000-100000"> 800000-100000</option>-->
+                <!--<option value="800000-100000"> 100000-200000</option>-->
+                <!--<option value="800000-100000"> 300000-400000</option>-->
+                <!--<option value="800000-100000"> 400000-500000</option>-->
+                <!--<option value="800000-100000"> 500000-600000</option>-->
+                <!--<option value="800000-100000"> 600000-700000</option>-->
+            <!--</select>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="bttn-index" class=" col-lg-4 ">-->
+            <!--<input style="color:black"; type="submit" value="search"/>-->
+        <!--</div>-->
+        <!--</form>-->
 
-    </div>
+    <!--</div>-->
     <!-- here search tag ends-->
+    <form id="form" method="post">
+        <div id="innerform">
+        <span id="carmodel">
+        <label>Car model:</label>
+        <input placeholder="eg :Toyota aqua" type="text" name="carmodel"/>
+        </span>
+
+            <span id="carrange">
+        <label> price range:</label>
+
+        <select  style="color: black">
+        <option value="800000-100000"> 800000-100000</option>
+        <option value="800000-100000"> 100000-200000</option>
+        <option value="800000-100000"> 300000-400000</option>
+        <option value="800000-100000"> 400000-500000</option>
+        <option value="800000-100000"> 500000-600000</option>
+        <option value="800000-100000"> 600000-700000</option>
+        </select>
+            </span>
+                    <span id="search">
+        <input style="color:black"; type="submit" value="search"/>
+                    </span>
+        </div>
+    </form>
     <div id="footer-index" style="color:#ffffff;" class="row font-index ">
 
         <div id="about" class="col-lg-4 "><!-- ADEEL YOU HAVE TO PUT YOUR link here -->
@@ -111,7 +155,7 @@
 
 
 </div>
-
+</div>
 </div>
 </body>
 </html>

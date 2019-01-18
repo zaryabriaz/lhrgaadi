@@ -3,6 +3,22 @@
     padding:0px;
     box-sizing:border-box;
 }
+
+#search{
+    padding-left:20px;
+}
+
+.m{
+    position:absolute;
+   margin-top: -570px;
+}
+.section{
+    overflow:hidden;
+    width:100%;
+    height:100vh;
+    position: relative;
+
+}
 .animation
 {
     animation: colorchange 1s infinite;
@@ -34,6 +50,7 @@
     background-color: transparent;
     border:1px solid;
 }
+
 .Button2-index
 {
     background-color: transparent;
@@ -99,7 +116,11 @@
     color: navajowhite;
 }
 #head-index{
-    background-color: #eaedf2;
+    /*background-color: #eaedf2;*/
+    background-color: black;
+    opacity: 0.6;
+    width:100vw;
+
 }
 img{
     height: 80px;
@@ -114,14 +135,53 @@ img{
     color :red;
     font-weight: bold;
 }
+/*.formData*/
+/*{*/
+ /*border:1px solid yellow;*/
+    /*width: 100%;*/
+    /*margin-top: -80px;*/
+    /*display:inline-block;*/
+/*}*/
+#form{
+    /*border:2px solid red;*/
+    background-color:black ;
+    /*opacity: 0.2;*/
+    background:rgba(0,0,0,0.3);
+    margin-left: 60px;
+    color: white;
+    border-radius:10px ;
+    width:1000px;
+    font-weight: bold;
+    height: 60px;
+    margin-top: 70px;
+}
+#carrange{
+    /*border:1px solid pink;*/
+    padding-left:40px;
+    /*padding-bottom: 10px;*/
 
+
+}
+/*#location{*/
+    /*border:1px solid pink;*/
+    /*padding-left:20px;*/
+/*}*/
+#carmodel{
+    /*border:1px solid pink;*/
+    padding-left:40px;
+}
 #footer-index{
     /*background-color: black;*/
-    height: 200px;
-}
-#footer-design-border{
+    /*height: 110px;*/
 
+    width:100vw;
+    background-color:black ;
+    opacity: 0.6;
+    margin:0px;
+    border:1px black solid;
+    margin-top: 50px;
 }
+
 #search_tag-index{
     padding-top: 120px;
     padding-bottom:100px;
@@ -131,13 +191,15 @@ img{
 {
     font-family: cursive;
 }
+/*
 #body-index{
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../media/background.jpg");
     background-size: cover;
-    /*background-color: red;*/
+    //background-color: red;
     background-position: center;
     background-repeat: no-repeat;
 }
+*/
 #bttn-index {
     padding-top: 25px;
 }
