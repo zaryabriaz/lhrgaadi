@@ -418,18 +418,55 @@ li_right_FP:hover:not(.active) {
     background-color: transparent;
     border:1px solid;
 }
-.login_Button1:hover
-{
-    background-color: white;
-}
-.login_Button2
+.Adminlogin_Button
 {
     background-color: transparent;
     border:1px solid;
 }
-.login_Button2:hover
+.Adminlogin_Button:hover
+{
+    background-color: skyblue;
+    color:black;
+}
+
+.login_Button1:hover
 {
     background-color: white;
+}
+
+Input[name = "Login_Name"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Login_Username"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Login_Email"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Login_Password"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Login_Confirm_Password"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Login_Address"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Login_Mobile_Number"]:valid
+{
+    background-color: limegreen;
 }
 /*Hammad codes ends here*/
 
@@ -846,7 +883,7 @@ textarea.contactinput1_ContactUs{
     font-weight: bold;
 }
 
-.btn-signup{
+.btn-signup {
     background-color: darkgray;
     color: black;
     font-weight: 900;
@@ -854,6 +891,40 @@ textarea.contactinput1_ContactUs{
     font-size: 17px;
 }
 
+Input[name = "Sign_up_Name"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Sign_up_Username"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Sign_up_Email"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Sign_up_Password"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Sign_up_Confirm_Password"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Sign_up_Address"]:valid
+{
+    background-color: limegreen;
+}
+
+Input[name = "Sign_up_Mobile_Number"]:valid
+{
+    background-color: limegreen;
+}
 /*zain ends here*/
 
 /*Adeel code starts here about us page*/
