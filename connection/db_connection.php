@@ -6,6 +6,6 @@
  * Time: 11:55 PM
  */
 
-$con = mysqli_connect("localhost","root","","lhrgaddi");
+$con = mysqli_connect("localhost","root","","lhrgaddi_db");
 if(!$con)
     die("Connection failed");
