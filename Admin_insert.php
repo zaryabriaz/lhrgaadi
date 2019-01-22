@@ -66,7 +66,7 @@
 
 <header class="Head">
     <ul class ="ul-FP">
-        <b><li_home_FP><a class="active" href="index.html"><i class="fas fa-home"></i><em> LhrGaddi</em></a></li_home_FP></b>
+        <b><li_home_FP><a class="active" href="index.php"><i class="fas fa-home"></i><em> LhrGaddi</em></a></li_home_FP></b>
         <li_right_FP><a href="AdminPanel.php">AdminPanel</a></li_right_FP>
         <li_right_FP><a href="login.php">Login</a></li_right_FP>
         <li_right_FP><a href="Signup.php">SignUp</a></li_right_FP>

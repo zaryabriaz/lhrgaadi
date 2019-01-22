@@ -45,8 +45,15 @@ if(isset($_POST['submit']))
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers|Old+Standard+TT">
 </head>
 <body>
+<header class="Head">
+    <ul class ="ul-FP">
+        <b><li_home_FP><a class="active" href="index.php"><i class="fas fa-home"></i><em> LhrGaddi</em></a></li_home_FP></b>
+        <li_right_FP><a href="login.php">Login</a></li_right_FP>
+        <li_right_FP><a href="Signup.php">SignUp</a></li_right_FP>
+    </ul>
+</header>
 <div id="addpost-body">
-    <b><li_home_FP><a class="active" href="index.html"><i class="fas fa-home"></i><em> LhrGaddi</em></a></li_home_FP></b>
+
 
     <h1 id="mainheading-addpost">Delete your add</h1>
     <form  id="addpost-form" method="post" action="deletepost.php" >
@@ -67,7 +74,11 @@ if(isset($_POST['submit']))
         </div>
 
         <input type="submit" name="submit">
-        <a href="loginenter.html">Press for home page of your Account"</a>
+        <a href="loginenter.php">Press for home page of your Account"</a>
     </form>
 </div>
+<footer class="navBT">
+    <a href="contact.html">ContactUs</a>
+    <a href="AboutUs.html">AboutUs</a>
+</footer>
 </body>
