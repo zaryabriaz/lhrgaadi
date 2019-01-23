@@ -154,7 +154,7 @@ require ("connection/db_connection.php");
     <div id="footer-index" style="color:#ffffff;" class="row font-index ">
 
         <div id="about" class="col-lg-4 "><!-- ADEEL YOU HAVE TO PUT YOUR link here -->
-            <a  href="AboutUs.html" class="Button-index Button1-index" >About Us</a><p>Information about us...</p>
+            <a href="AboutUs.php" class="Button-index Button1-index" >About Us</a><p>Information about us...</p>
         </div>
         <div class="col-lg-4"><!-- Ali YOU HAVE TO PUT YOUR link here -->
             <a href="contact.php" class="Button-index Button2-index" >Contact us</a><p>Give Suggestion to help to improve us... </p>

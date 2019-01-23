@@ -108,7 +108,7 @@
 </div>
 <footer class="navBT">
     <a href="contact.html">ContactUs</a>
-    <a href="AboutUs.html">AboutUs</a>
+    <a href="AboutUs.php">AboutUs</a>
 </footer>
 </body>
 </html>

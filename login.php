@@ -1,5 +1,8 @@
 <?php
 session_start();
+include("header.php");
+include("footer.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,13 +75,9 @@ session_start();
 
 </head>
 <body>
-<header class="Head">
-    <ul class ="ul-FP">
-        <b><li_home_FP><a class="active" href="index.php"><i class="fas fa-home"></i><em> LhrGaddi</em></a></li_home_FP></b>
-<!--        <li_right_FP><a href="login.html">Login</a></li_right_FP>-->
-        <li_right_FP><a href="Signup.php">SignUp</a></li_right_FP>
-    </ul>
-</header>
+<?php
+header_show();
+?>
 
 <div class="login_Container">
     <div class="login_Background" >
@@ -119,9 +118,8 @@ session_start();
                 </form>
 
 
-        <div class="navBT">
-    <a href="contact.php">ContactUs</a>
-    <a href="AboutUs.html">AboutUs</a>
-</div>
+        <?php
+        footer_show();
+        ?>
 </body>
 </html>
