@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 22, 2019 at 02:34 AM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.3.0
+-- Generation Time: Jan 23, 2019 at 08:08 AM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -33,12 +33,22 @@ CREATE TABLE `adds` (
   `Model` varchar(255) NOT NULL,
   `Make` varchar(255) NOT NULL,
   `Price` int(255) NOT NULL,
+  `Username` varchar(255) NOT NULL,
   `Name` varchar(255) NOT NULL,
   `Email` varchar(255) NOT NULL,
-  `PhoneNumber` binary(255) NOT NULL,
+  `PhoneNumber` varchar(255) NOT NULL,
   `Details` varchar(255) NOT NULL,
-  `Images` longblob NOT NULL
+  `Images` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `adds`
+--
+
+INSERT INTO `adds` (`Aid`, `Model`, `Make`, `Price`, `Username`, `Name`, `Email`, `PhoneNumber`, `Details`, `Images`) VALUES
+(31, 'Prius', 'Toyota', 1800000, 'zr', 'zaryab', 'zaryabriaz@ucp.edu.pk', '03444551224', 'car is in very good condition ', 'download (1).jpg'),
+(32, 'Hilux', 'Toyota', 2500000, 'zr', 'zaryab', 'zaryabriaz@ucp.edu.pk', '03444551224', 'car is in new condition ', 'images (1).jpg'),
+(33, 'Landcruiser', 'Toyota', 100000000, 'zr', 'zaryab', 'zaryabriaz@ucp.edu.pk', '03444551224', 'car is in very good condition ', 'images.jpg');
 
 -- --------------------------------------------------------
 
@@ -73,6 +83,24 @@ CREATE TABLE `contactus_by_email` (
   `Phone` varchar(255) NOT NULL,
   `Message` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contactus_by_email`
+--
+
+INSERT INTO `contactus_by_email` (`Cid`, `Name`, `Email`, `Phone`, `Message`) VALUES
+(1, 'zaryab', 'zaryabriaz@ucp.edu.pk', '03444551224', 'khhkh'),
+(2, 'zaryab', 'zaryabriaz@ucp.edu.pk', '03444551224', 'khhkh'),
+(3, 'zaryab', 'zaryabriaz@ucp.edu.pk', '03444551224', 'm,m,'),
+(4, 'zaryab', 'zaryabriaz@ucp.edu.pk', '03444551224', 'm,m,'),
+(5, 'ali', 'ali@gmail.com', '03211234567', 'good to see your company buddy!!!'),
+(6, 'ali', 'ali@gmail.com', '03211234567', 'good to see your company buddy!!!'),
+(7, 'ali', 'ali@gmail.com', '03211234567', 'good to see your company buddy!!!'),
+(8, 'ali', 'ali@gmail.com', '03211234567', 'good to see your company buddy!!!'),
+(9, 'ali', 'ali@gmail.com', '03211234567', 'good to see your company buddy!!!'),
+(10, 'ali', 'ali@gmail.com', '03211234567', 'good to see your company buddy!!!'),
+(11, 'ali', 'ali@gmail.com', '03211234567', 'good to see your company buddy!!!'),
+(12, 'ali', 'ali@gmail.com', '03211234567', 'good to see your company buddy!!!');
 
 -- --------------------------------------------------------
 
@@ -117,7 +145,8 @@ INSERT INTO `sign_up` (`id`, `Name`, `Username`, `Email`, `Password`, `ConfirmPa
 (17, 'Fakhar Shakeel', 'Fakhar123', 'Fakhar@gmail.com', 'Fakhar123', 'Fakhar123', '12-e AwanTown Lahore', '03205622889'),
 (18, 'Arsal Sheikh', 'Arsal123', 'Arsal123@gmail.com', 'Arsal123', 'Arsal123', '12-N Sabzadar Lahore', '03248498622'),
 (19, 'Zain Yazdan', 'ZainYazdan123', 'ZainYazdan123@gmail.com', 'Yazdan123', 'Yazdan123', '23-e AbidMarket Lahore', '03295555555'),
-(20, 'Zain Ali', 'ZainALi123', 'ZainAli123@gmail.com', 'Zain123', 'Zain123', '43-e Muslim Town', '03444444444');
+(20, 'Zain Ali', 'ZainALi123', 'ZainAli123@gmail.com', 'Zain123', 'Zain123', '43-e Muslim Town', '03444444444'),
+(21, 'zaryab', 'zr', 'zaryabriaz@gmail.com', 'Password123', 'Password123', '14 johar town', '03444551224');
 
 --
 -- Indexes for dumped tables
@@ -161,7 +190,7 @@ ALTER TABLE `sign_up`
 -- AUTO_INCREMENT for table `adds`
 --
 ALTER TABLE `adds`
-  MODIFY `Aid` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `Aid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `admin`
@@ -173,7 +202,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `contactus_by_email`
 --
 ALTER TABLE `contactus_by_email`
-  MODIFY `Cid` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `Cid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `registration`
@@ -185,7 +214,7 @@ ALTER TABLE `registration`
 -- AUTO_INCREMENT for table `sign_up`
 --
 ALTER TABLE `sign_up`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
