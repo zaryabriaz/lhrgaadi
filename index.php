@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,9 +15,9 @@
 
     <title>Lhr Gaddi</title>
 </head>
+
 <body id="body-index">
 <div class="section">
-
 
     <div class="video-container">
         <div class="color-overlay"></div>
@@ -34,6 +35,13 @@
             <a href="Adminlogin.php" class="Button-index Button1-index">Admin Login</a>
         </div>
         <div class="col-md-4">
+            <?php
+            session_start();
+            if(isset($_SESSION['loginusername']))
+            {
+                echo "Welcome " . $_SESSION['loginusername'];
+                echo "<a href=\"UserLogout.php\" class=\"Button-index Button1-index\" >Logout</a>|";
+            }?>
             <a href="login.php" class="Button-index Button1-index">signin</a>|<!-- Hammad YOU HAVE TO PUT YOUR link here -->
             <a href="Signup.php" class="Button-index Button1-index">signup</a><!-- zain ali YOU HAVE TO PUT YOUR link here -->
         </div>
