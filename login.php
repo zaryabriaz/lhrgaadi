@@ -101,7 +101,7 @@ header_show();
                             <br>
                     <div>
                         <h2 style="color: white;">
-                            <input type="password" name="Password" class ="login_form-control-my" placeholder="Enter Your Password">
+                            <input type="password" name="Password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class ="login_form-control-my" placeholder="Enter Your Password">
                             &nbsp
                             <i class="fas fa-lock" style="color: skyblue"></i>
                         </h2>

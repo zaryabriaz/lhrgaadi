@@ -32,6 +32,7 @@ require ("connection/db_connection.php");
 <div class="m">
 <div class="container-fluid  change-index font-index">
     <!-- Here top-border starts-->
+    <header class="Head">
     <div id="head-index" class="row justify-content-end">
         <div class="col-md-8">
             <a href="Adminlogin.php" class="Button-index Button1-index">Admin Login</a>
@@ -42,7 +43,7 @@ require ("connection/db_connection.php");
         </div>
     </div>
     <!-- here top-border ends-->
-
+    </header>
     <div  class="  row ">
         <div id="subHead-index" class="col" >
             <img id="logo-index" src="media/logo.png" alt="LHR GADDI"/>
@@ -123,27 +124,28 @@ require ("connection/db_connection.php");
 
     <!--</div>-->
     <!-- here search tag ends-->
-    <form id="form-index" method="post">
+    <form id="form-index" action="display_car_result.php" method="post">
         <div id="innerform">
         <span id="carmodel">
         <label>Car model:</label>
-        <input placeholder="eg :Toyota aqua" type="text" name="carmodel"/>
+        <input placeholder="eg :Toyota aqua" required pattern="[a-zA-Z]{4,30}" type="text" name="carmodel"/>
         </span>
 
             <span id="carrange">
         <label> price range:</label>
 
-        <select  style="color: black">
-        <option value="800000-100000"> 800000-100000</option>
-        <option value="800000-100000"> 100000-200000</option>
-        <option value="800000-100000"> 300000-400000</option>
-        <option value="800000-100000"> 400000-500000</option>
-        <option value="800000-100000"> 500000-600000</option>
-        <option value="800000-100000"> 600000-700000</option>
-        </select>
+        <input placeholder="max range..." type="text" name="range" required pattern="^[1-9][0-9]{5,30}" />
+<!--        <select  name="price" style="color: black">-->
+<!--        <option value="800000-100000"> 800000-100000</option>-->
+<!--        <option value="800000-100000"> 100000-200000</option>-->
+<!--        <option value="800000-100000"> 300000-400000</option>-->
+<!--        <option value="800000-100000"> 400000-500000</option>-->
+<!--        <option value="800000-100000"> 500000-600000</option>-->
+<!--        <option value="800000-100000"> 600000-700000</option>-->
+<!--        </select>-->
             </span>
                     <span id="search">
-        <input style="color:black"; type="submit" value="search"/>
+        <input style="color:black";  name="submit" type="submit" value="search"/>
                     </span>
         </div>
 

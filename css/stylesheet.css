@@ -118,7 +118,7 @@
 }
 #head-index{
     /*background-color: #eaedf2;*/
-    margin-top: 35px;
+    margin-top: -50px;
     background-color: black;
     opacity: 0.6;
     width:100vw;
@@ -181,7 +181,7 @@ img{
     opacity: 0.6;
     margin:0px;
     border:1px black solid;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 #search_tag-index{
@@ -1073,11 +1073,17 @@ input[name="UserName"]:valid{
 input[name="Password"]:valid{
     background-color: limegreen;
 }
-input[name="Email"]:valid{
+input[ Name = "Email"]:valid{
     background-color: limegreen;
 }
 input[name="PhoneNumber"]:valid{
     background-color: limegreen;
+}
+input[name="range"]:valid{
+    background-color: green;
+}
+input[name="carmodel"]:valid{
+    background-color: green;
 }
 #showpost{
     color:white;

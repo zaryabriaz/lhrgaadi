@@ -101,7 +101,7 @@
     </div>
     <div>
         <h2  style="color: white;">
-            <input class ="login_form-control-my" type="password"  name="Login_Password" placeholder="Password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+            <input class ="login_form-control-my" type="password"  name="Login_Password" placeholder="Password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" >
             &nbsp
             <i  class="fas fa-lock" style="color: skyblue"></i>
         </h2>
