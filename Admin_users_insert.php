@@ -13,52 +13,62 @@
     <meta name="author" content="Hammad Mubeen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    if(isset($_POST['Insert_Button']))
+    session_start();
+    if(isset($_SESSION['adminloginusername']))
     {
-        $name=$_POST['Login_Name'];
-        $username=$_POST['Login_Username'];
-        $email=$_POST['Login_Email'];
-        $password=$_POST['Login_Password'];
-        $confirmpassword=$_POST['Login_Confirm_Password'];
-        $address=$_POST['Login_Address'];
-        $mobilenumber=$_POST['Login_Mobile_Number'];
-        require "connection/db_connection.php";
-        $select="SELECT * FROM `sign_up`";
-        $selectquery=mysqli_query($con,$select);
-        $check=0;
-        while($row=mysqli_fetch_array($selectquery))
+        if(isset($_POST['Insert_Button']))
         {
-            $db_Username=$row['Username'];
-            $db_Email=$row['Email'];
-            $db_Mobile_Number=$row['Mobile_Number'];
-            if($db_Username==$username || $db_Email==$email || $db_Mobile_Number==$mobilenumber)
+            $name=$_POST['Login_Name'];
+            $username=$_POST['Login_Username'];
+            $email=$_POST['Login_Email'];
+            $password=$_POST['Login_Password'];
+            $confirmpassword=$_POST['Login_Confirm_Password'];
+            $address=$_POST['Login_Address'];
+            $mobilenumber=$_POST['Login_Mobile_Number'];
+            require "connection/db_connection.php";
+            $select="SELECT * FROM `sign_up`";
+            $selectquery=mysqli_query($con,$select);
+            $check=0;
+            while($row=mysqli_fetch_array($selectquery))
             {
-                echo '<script language="javascript">';
-                echo 'alert("Username or Email or Mobile number already exits.")';
-                echo '</script>';
-                $check=0;
-                break;
+                $db_Username=$row['Username'];
+                $db_Email=$row['Email'];
+                $db_Mobile_Number=$row['Mobile_Number'];
+                if($db_Username==$username || $db_Email==$email || $db_Mobile_Number==$mobilenumber)
+                {
+                    echo '<script language="javascript">';
+                    echo 'alert("Username or Email or Mobile number already exits.")';
+                    echo '</script>';
+                    $check=0;
+                    break;
+                }
+                else
+                {
+                    $check=1;
+                }
             }
-            else
+            if($check==1)
             {
-                $check=1;
+                if($password==$confirmpassword)
+                {
+                    $insert="INSERT INTO `sign_up` (`id`, `Name`, `Username`, `Email`, `Password`, `ConfirmPassword`, `Address`, `Mobile_Number`) VALUES (NULL,'$name','$username','$email','$password','$confirmpassword','$address','$mobilenumber')";
+                    $insertquery=mysqli_query($con,$insert);
+                }
+                else
+                {
+                    echo '<script language="javascript">';
+                    echo 'alert("Password and Confirm Password are not matched.")';
+                    echo '</script>';
+                }
             }
-        }
-        if($check==1)
-        {
-            if($password==$confirmpassword)
-            {
-                $insert="INSERT INTO `sign_up` (`id`, `Name`, `Username`, `Email`, `Password`, `ConfirmPassword`, `Address`, `Mobile_Number`) VALUES (NULL,'$name','$username','$email','$password','$confirmpassword','$address','$mobilenumber')";
-                $insertquery=mysqli_query($con,$insert);
-            }
-            else
-            {
-                echo '<script language="javascript">';
-                echo 'alert("Password and Confirm Password are not matched.")';
-                echo '</script>';
-            }
-        }
 
+        }
+    }
+    else
+    {
+        echo '<script language="javascript">';
+        echo 'alert("Login admin first.")';
+        echo '</script>';
     }
     ?>
 </head>
@@ -67,7 +77,8 @@
 <header class="Head">
     <ul class ="ul-FP">
         <b><li_home_FP><a class="active" href="index.php"><i class="fas fa-home"></i><em> LhrGaddi</em></a></li_home_FP></b>
-        <li_right_FP><a href="AdminPanel.php">AdminPanel</a></li_right_FP>
+        <li_right_FP><a href="AdminuserPanel.php">AdminuserPanel</a></li_right_FP>
+        <li_right_FP><a href="AdminLogout.php">Logout</a></li_right_FP>
         <li_right_FP><a href="login.php">Login</a></li_right_FP>
         <li_right_FP><a href="Signup.php">SignUp</a></li_right_FP>
     </ul>
@@ -77,7 +88,7 @@
     <div >
         <h1 style="margin-top: 5%">Insert</h1>
     </div>
-    <form action="Admin_insert.php" method="POST">
+    <form action="Admin_users_insert.php" method="POST">
     <div>
         <h2  style="color: white;">
             <input class ="login_form-control-my" type="text"  name="Login_Name" placeholder="Name" required pattern="[a-zA-Z][a-zA-Z][a-zA-Z\s]+$">
@@ -101,7 +112,7 @@
     </div>
     <div>
         <h2  style="color: white;">
-            <input class ="login_form-control-my" type="password"  name="Login_Password" placeholder="Password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" >
+            <input class ="login_form-control-my" type="password"  name="Login_Password" placeholder="Password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
             &nbsp
             <i  class="fas fa-lock" style="color: skyblue"></i>
         </h2>
@@ -134,7 +145,7 @@
 </div>
 <footer class="navBT">
     <a href="contact.html">ContactUs</a>
-    <a href="AboutUs.php">AboutUs</a>
+    <a href="AboutUs.html">AboutUs</a>
 </footer>
 </body>
 </html>

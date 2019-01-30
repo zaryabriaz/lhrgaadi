@@ -19,6 +19,7 @@
 <header class="Head">
     <ul class ="ul-FP">
         <b><li_home_FP><a class="active" href="index.php"><i class="fas fa-home"></i><em> LhrGaddi</em></a></li_home_FP></b>
+        <li_right_FP><a href="AdminPanel.php">AdminPanel</a></li_right_FP>
         <li_right_FP><a href="AdminLogout.php">Logout</a></li_right_FP>
         <li_right_FP><a href="login.php">Login</a></li_right_FP>
         <li_right_FP><a href="Signup.php">SignUp</a></li_right_FP>
@@ -28,15 +29,23 @@
 
 <div class="login_Container">
     <div >
-        <h1 style="margin-top: 5%">Admin Panel</h1>
+        <h1 style="margin-top: 5%">Products</h1>
     </div>
     <br>
     <div>
-        <a href="AdminuserPanel.php" class="login_Button Adminlogin_Button" style="text-decoration: none">Users</a>
+        <a href="Admin_products_insert.php" class="login_Button Adminlogin_Button" style="text-decoration: none">Insert</a>
     </div>
     <br>
     <div>
-        <a href="AdminproductPanel.php" class="login_Button Adminlogin_Button" style="text-decoration: none">Products</a>
+        <a href="Admin_products_getidupdate.php" class="login_Button Adminlogin_Button" style="text-decoration: none">Update</a>
+    </div>
+    <br>
+    <div>
+        <a href="Admin_products_delete.php" class="login_Button Adminlogin_Button" style="text-decoration: none">Delete</a>
+    </div>
+    <br>
+    <div>
+        <a href="Admin_products_view.php" class="login_Button Adminlogin_Button" style="text-decoration: none">View</a>
     </div>
 
 </div>
