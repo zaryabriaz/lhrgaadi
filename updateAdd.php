@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['Change_Password_Button'])) {
+if(isset($_POST['Change_Password_Button']))  {
     echo "isset";
     $EMAIL = $_POST['CP_email_input'];
     $PASSWORD = $_POST['CP_password_input'];
