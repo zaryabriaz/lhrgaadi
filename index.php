@@ -30,6 +30,7 @@
 <div class="m">
 <div class="container-fluid  change-index font-index">
     <!-- Here top-border starts-->
+    <header class="Head">
     <div id="head-index" class="row justify-content-end">
         <div class="col-md-8">
             <a href="Adminlogin.php" class="Button-index Button1-index">Admin Login</a>
@@ -47,7 +48,7 @@
         </div>
     </div>
     <!-- here top-border ends-->
-
+    </header>
     <div  class="  row ">
         <div id="subHead-index" class="col" >
             <img id="logo-index" src="media/logo.png" alt="LHR GAADI"/>
@@ -62,7 +63,9 @@
             <div class="col " style=" color:#ffff">
 
                 <ul class="main-nav-index font-index">
-                    <li><a href="#">SELL</a></li>
+                    <li><a href="adds.php">Ads</a></li>
+
+                    <li><a href="login.php">SELL</a></li>
                     <li><a href="#">PURCHASE</a></li>
                     <li><a href="#">CAR REVIEWS</a></li>
                     <li><a href="#">PRE-BOOKING</a></li>
@@ -80,7 +83,7 @@
 
         </div>
     </div>
-
+    <div style="margin-top: 70px; ">
     <div  id ="find-index" class="row justify-content-center">
         <div class="col font-index">
             <h1 class="h1-index" >Find Used Cars on <span class="animation" style="color:red">LhrGaadi</span>.<br>
@@ -127,37 +130,38 @@
 
     <!--</div>-->
     <!-- here search tag ends-->
-    <form id="form" method="post">
-        <div id="innerform">
+    <form  style="padding-top: 40px;" id="form"  action="display_car_result.php"  method="post">
+        <div  id="innerform">
         <span id="carmodel">
         <label>Car model:</label>
-        <input placeholder="eg :Toyota aqua" type="text" name="carmodel"/>
+        <input placeholder="eg :Toyota aqua"  required pattern="[a-zA-Z]{4,30}" type="text" name="carmodel"/>
         </span>
 
             <span id="carrange">
         <label> price range:</label>
-
-        <select  style="color: black">
-        <option value="800000-100000"> 800000-100000</option>
-        <option value="800000-100000"> 100000-200000</option>
-        <option value="800000-100000"> 300000-400000</option>
-        <option value="800000-100000"> 400000-500000</option>
-        <option value="800000-100000"> 500000-600000</option>
-        <option value="800000-100000"> 600000-700000</option>
-        </select>
+         <input placeholder="max range..." type="text" name="range" required pattern="^[1-9][0-9]{5,30}" />
+<!--        <select  style="color: black">-->
+<!--        <option value="800000-100000"> 800000-100000</option>-->
+<!--        <option value="800000-100000"> 100000-200000</option>-->
+<!--        <option value="800000-100000"> 300000-400000</option>-->
+<!--        <option value="800000-100000"> 400000-500000</option>-->
+<!--        <option value="800000-100000"> 500000-600000</option>-->
+<!--        <option value="800000-100000"> 600000-700000</option>-->
+<!--        </select>-->
             </span>
                     <span id="search">
-        <input style="color:black"; type="submit" value="search"/>
+        <input style="color:black"; name="submit" type="submit" value="search"/>
                     </span>
         </div>
     </form>
+    </div>
     <div id="footer-index" style="color:#ffffff;" class="row font-index ">
 
         <div id="about" class="col-lg-4 "><!-- ADEEL YOU HAVE TO PUT YOUR link here -->
-            <a  href="AboutUs.html" class="Button-index Button1-index" >About Us</a><p>Information about us...</p>
+            <a  href="AboutUs.php" class="Button-index Button1-index" >About Us</a><p>Information about us...</p>
         </div>
         <div class="col-lg-4"><!-- Ali YOU HAVE TO PUT YOUR link here -->
-            <a href="contact.html" class="Button-index Button2-index" >Contact us</a><p>Give Suggestion to help to improve us... </p>
+            <a href="contact.php" class="Button-index Button2-index" >Contact us</a><p>Give Suggestion to help to improve us... </p>
         </div>
         <div class="col-lg-4">
             <a href="#" class="Button-index Button3-index" >Terms & Conditions</a><p>Rules and policies...</p>

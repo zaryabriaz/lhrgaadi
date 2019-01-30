@@ -42,7 +42,7 @@
                     {
                         $result=1;
                         $_SESSION["loginusername"] = $username;
-                        header("Location:index.php");
+                        header("Location:loginenter.php");
                         break;
                     }
                     $result=2;
@@ -95,7 +95,7 @@
                             <br>
                     <div>
                         <h2 style="color: white;">
-                            <input class ="login_form-control-my" type="password" name="Login_Password" placeholder="Enter Your Password" required pattern="^(?=.*\d)(?=.*[a-z](?=.*[A-Z](?!.*\s).*$">
+                            <input class ="login_form-control-my" type="password" name="Login_Password" placeholder="Enter Your Password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" >
                             &nbsp
                             <i class="fas fa-lock" style="color: skyblue"></i>
                         </h2>
@@ -113,8 +113,8 @@
 
     </div>
 <div class="navBT">
-    <a href="contact.html">ContactUs</a>
-    <a href="AboutUs.html">AboutUs</a>
+    <a href="contact.php">ContactUs</a>
+    <a href="AboutUs.php">AboutUs</a>
 </div>
 </body>
 </html>

@@ -22,7 +22,7 @@ if(isset($_POST["submit"]) ) {
     $price=$_POST['Price'];
     $name=$_POST['Name'];
     $email=$_POST['Email'];
-    $username=$_SESSION['User'];
+    $username=$_SESSION['loginusername'];
     $phonenumber=$_POST['PhoneNumber'];
     $details=$_POST['Details'];
     if(isset($_FILES['image'])) {
@@ -84,7 +84,7 @@ header_show();
     <form  id="addpost-form" method="post" action="addpost.php" enctype="multipart/form-data" >
         <div>
         <label>Model:</label>
-        <input  type="text" style="input:valid{background-color:green;} " name="Model" required pattern="[a-zA-Z]+[\s]+" >
+        <input  type="text" style="input:valid{background-color:green;} " name="Model" required pattern="[a-zA-Z]+[\s]?" >
         </div>
         <div>
         <label>Make  :</label>

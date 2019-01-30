@@ -39,4 +39,10 @@ echo "
 </div>
 ";
 }
-
+?>
+<body>
+<?php
+echo'<div  style ="background-color: black; color:white;" >';
+echo" <a href='index.php'>Back</a>";
+?>
+</body>

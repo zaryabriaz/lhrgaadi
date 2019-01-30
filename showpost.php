@@ -1,8 +1,3 @@
-<?php
-session_start();
-
-require "connection/db_connection.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +12,10 @@ require "connection/db_connection.php";
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<?php
+
+    <?php
+
+
 /**
  * Created by PhpStorm.
  * User: zaryab
@@ -25,28 +23,32 @@ require "connection/db_connection.php";
  * Time: 4:33 PM
  */
 
-$user=$_SESSION["User"];
+    session_start();
+
+    require "connection/db_connection.php";
+    include"header.php";
+    include"footer.php";
+    $user = $_SESSION["loginusername"];
 //echo"$user";
-$query="select * from adds where Username='$user'";
+    $query = "select * from adds where Username='$user'";
 
-$result=mysqli_query($con,$query);
-if(mysqli_num_rows($result)==0)
-{  echo"<script>";
-    echo 'alert(" no ad on your Account")';
-    echo"</script>";
-}
-else {
+    $result = mysqli_query($con, $query);
+    if (mysqli_num_rows($result) == 0) {
+        echo "<script>";
+        echo 'alert(" no ad on your Account")';
+        echo "</script>";
+    } else {
 
-    while ($rows = mysqli_fetch_assoc($result)) {
-        $aid=$rows['Aid'];
-        $model= $rows['Model'];
-        $make=$rows['Make'];
-        $price=$rows['Price'];
-        $details=$rows['Details'];
-        $img=$rows['Images'];
+        while ($rows = mysqli_fetch_assoc($result)) {
+            $aid = $rows['Aid'];
+            $model = $rows['Model'];
+            $make = $rows['Make'];
+            $price = $rows['Price'];
+            $details = $rows['Details'];
+            $img = $rows['Images'];
 
-        echo "
-                    <div id='showpost'>
+            echo "
+                    <div style='height:80%;' id='showpost'>
                     <img src='Admin/addimages/$img' alt='car picture'>
                     <br>
                     <label>Model:</label>
@@ -57,6 +59,14 @@ else {
                     Details:<h2>$details</h2>
                     </div>
         ";
+        }
     }
-}
 
+?>
+<body>
+
+<?php
+echo'<div  style ="height: 20%;" class="navBT">';
+echo" <a href='loginenter.php'>Back</a>";
+?>
+</body>

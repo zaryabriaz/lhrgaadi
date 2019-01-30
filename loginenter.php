@@ -29,7 +29,7 @@ session_start();
 
         <h1 id="main-heading">welcome to your account </h1>
     <?php
-    $user=$_SESSION["User"];
+    $user=$_SESSION["loginusername"];
 //    echo $user;
     require "connection/db_connection.php";
     $select="select Name from sign_up where Username='$user'";

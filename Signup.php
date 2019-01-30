@@ -151,8 +151,8 @@
 	</div>
 </div>
 <div class="navBT">
-	<a href="contact.html">ContactUs</a>
-	<a href="AboutUs.html">AboutUs</a>
+	<a href="contact.php">ContactUs</a>
+	<a href="AboutUs.php">AboutUs</a>
 </div>
 
 </body>
