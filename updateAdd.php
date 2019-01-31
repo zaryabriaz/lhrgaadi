@@ -1,55 +1,54 @@
 <?php
-if(isset($_POST['Change_Password_Button']))  {
+$check=0;
+if(isset($_POST['Change_Password_Button'])) {
     echo "isset";
     $EMAIL = $_POST['CP_email_input'];
     $PASSWORD = $_POST['CP_password_input'];
     $CONFIRM_PASSWORD = $_POST['CP_confirm_password_input'];
-
     require "connection/db_connection.php";
-
     $select = "select * from sign_up";
-    $query1 = mysqli_query($con, $select);
-    $check = 0;
-    $row = mysqli_fetch_array($query1);
-    while ($row = mysqli_fetch_array($query1)) {
-        echo "While loop";
-        $email = $row['Email'];
-        $password = $row['Password'];
-        if (($email != $EMAIL)) {
-            echo '<script language="javascript">';
-            echo 'alert("Email does not exist")';
-            echo '</script>';
-            $check = 1;
-            break;
-        } else if (($password == $PASSWORD)) {
-            echo '<script language="javascript">';
-            echo 'alert("Password already exists")';
-            echo '</script>';
-            $check = 2;
-            break;
-        } else
-            $check = 3;
-    }
-
-    if ($check == 3) {
-        echo "check = 3";
-        $sql = "SELECT Email FROM sign_up";
-        $result = mysqli_query($con, $sql);
-        while ($row = mysqli_fetch_assoc($result)) {
-            $emailFromDb = $row{'Email'};
-            $EMAIL = $_POST['CP_email_input'];
-            if ($emailFromDb == $EMAIL) {
-                if ($PASSWORD == $CONFIRM_PASSWORD) {
-                    echo "pass matched";
-                    $insert = "insert into sign_up(Password,ConfirmPassword) values($PASSWORD','$CONFIRM_PASSWORD)";
-                    $query2 = mysqli_query($con, $insert);
-                } else {
-                    echo '<script language="javascript">';
-                    echo 'alert("Password and Confirm Password not matched:")';
-                    echo '</script>';
-                }
+    $result = mysqli_query($con, $select);
+    $row = mysqli_fetch_array($result);
+    while ($row = mysqli_fetch_array($result)) {
+        $emailFromDb = $row['Email'];
+        echo "$emailFromDb";
+        if($EMAIL==$emailFromDb)
+        {
+            echo "Email matched";
+            if ($PASSWORD == $CONFIRM_PASSWORD) {
+                echo "pass matched";
+                $check =3;
+                break;
+            } else {
+                $check=2;
+                break;
             }
         }
+        else{
+            echo "Email not matched";
+
+            $check=1;
+            break;
+        }
+    }
+//    if($check==1)
+//    {
+//        echo '<script language="javascript">';
+//        echo 'alert("Incorrect Email:")';
+//        echo '</script>';
+//    }
+    if($check == 2){
+        echo '<script language="javascript">';
+        echo 'alert("Password and Confirm Password not matched:")';
+        echo '</script>';
+    }
+    if($check == 3){
+        $insert = "UPDATE sign_up SET Password='$PASSWORD',ConfirmPassword='$CONFIRM_PASSWORD'WHERE Email='$EMAIL'";
+        $query2 = mysqli_query($con, $insert);
+        header("Location:login.php");
+        echo '<script language="javascript">';
+        echo 'alert("Password has been changed:")';
+        echo '</script>';
     }
 }
 ?>
@@ -77,7 +76,7 @@ if(isset($_POST['Change_Password_Button']))  {
     <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-12 col-xl-4 col-lg-4"></div>
         <div class="col-xs-12 col-sm-6 col-xs-12 col-xl-4 col-lg-4">
-            <form class="form-container_forgotPassword">
+            <form class="form-container_forgotPassword" method="post" action="updateAdd.php">
                 <h4>
                     Change Password:
                 </h4>
@@ -103,6 +102,6 @@ if(isset($_POST['Change_Password_Button']))  {
 </div>
 <div class="navBT">
     <a href="contact.html">ContactUs</a>
-    <a href="AboutUs.php">AboutUs</a>
+    <a href="AboutUs.html">AboutUs</a>
 </div>
 </body>
